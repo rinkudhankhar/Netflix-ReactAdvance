@@ -1,0 +1,138 @@
+/* index.css */
+
+:root {
+  --background-color: #2b2525;
+  --primary-color: rgb(55, 36, 36);
+  --text-color: rgb(241, 233, 230);
+  --accent-color: #ff9900;
+  --button-color: #f44336;
+  --button-hover-color: #4CAF50;
+  --card-shadow-color: rgba(0, 0, 0, 0.1);
+  --card-title-color: #333;
+  --card-category-color: #777;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  overflow-x: auto;
+  gap: 20px;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  margin: 4px;
+  padding: 4px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  margin-bottom: 4px;
+  justify-content: space-evenly;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0px 2px 6px var(--card-shadow-color);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  width: 280px;
+  margin: 10px;
+}
+
+.card:hover,
+.cards:hover {
+  transform: translateY(-20px) scale(1.05);
+  border-color: var(--accent-color);
+  border-width: 2px;
+}
+
+.card_img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card_info {
+  padding: 16px;
+}
+
+.card_category {
+  font-size: 14px;
+  color: var(--card-category-color);
+}
+
+.card_title {
+  margin-top: 8px;
+  font-size: 18px;
+  color: var(--card-title-color);
+}
+
+.card_title:hover {
+  color: var(--button-color);
+}
+
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--button-color);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: var(--button-hover-color);
+  color: white;
+}
+
+.heading_style {
+  font-size: 20px;
+  padding: 30px 0;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: var(--accent-color);
+  background-color: var(--text-color);
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.button_style {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+
+}
+
+.button_style:hover {
+  cursor: pointer;
+}
+
