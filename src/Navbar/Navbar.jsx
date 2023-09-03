@@ -20,7 +20,7 @@ function Navbar(props) {
                 <div >
                     <button className='button_nav'>Search</button>
                     <button className='button_nav'>Notifications</button>
-                    <button className='button_nav'>Profile</button>
+                   
                 </div>
             </div>
            <img
